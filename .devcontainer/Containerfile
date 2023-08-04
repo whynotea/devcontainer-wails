@@ -1,0 +1,17 @@
+FROM ghcr.io/whynotea/devcontainer-golang:v1.0.1
+
+USER root
+ARG VERSION=v18.16.0
+ARG DISTRO=linux-x64
+RUN dnf install -y --setopt=install_weak_deps=false --setopt=tsflags=nodocs \
+                gtk3-devel webkit2gtk4.0-devel mesa-dri-drivers xz && \
+    dnf clean all && rm -rf /var/cache/yuminstall && \
+    mkdir -p /usr/local/lib/nodejs && \
+    curl -L https://nodejs.org/dist/$VERSION/node-$VERSION-$DISTRO.tar.xz \
+          | tar -xJv -C /usr/local/lib/nodejs && \
+    ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO /usr/local/lib/nodejs/nodejs-latest
+    
+USER code
+RUN zsh -ic "go install github.com/wailsapp/wails/v2/cmd/wails@latest && \
+             go install github.com/leaanthony/winicon/cmd/winicon@latest && \
+             go install github.com/tc-hib/go-winres@latest"

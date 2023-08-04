@@ -1,0 +1,32 @@
+{
+  "build": {
+    "dockerfile": "./Containerfile",
+    "context": "."
+  },
+    "features": {
+    },
+    "runArgs": [
+      "--security-opt",
+      "label=disable",
+      "--device",
+      "/dev/fuse",
+      "--userns=keep-id"
+    ],
+    "customizations": {
+        "vscode": {
+            "settings": {
+            },
+            "extensions": [
+              "antfu.iconify",
+              "johnsoncodehk.vscode-pug",
+              "syler.sass-indented",
+              "jock.svg",
+              "vue.vscode-typescript-vue-plugin",
+              "antfu.vite",
+              "zixuanchen.vitest-explorer",
+              "vue.volar"
+            ]
+        }
+    },
+    "remoteUser": "code"
+}
