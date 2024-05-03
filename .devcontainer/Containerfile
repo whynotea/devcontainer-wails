@@ -12,7 +12,7 @@ RUN dnf install -y --setopt=install_weak_deps=false --setopt=tsflags=nodocs \
     ln -s /usr/local/lib/nodejs/node-$VERSION-$DISTRO /usr/local/lib/nodejs/nodejs-latest
     
 USER code
-RUN zsh -ic "go install github.com/wailsapp/wails/v2/cmd/wails@v2.7.1 && \
+RUN zsh -ic "go install github.com/wailsapp/wails/v2/cmd/wails@v2.8.1 && \
              go install github.com/leaanthony/winicon/cmd/winicon@latest && \
              go install github.com/tc-hib/go-winres@latest"
 ENV PATH="${PATH}:/usr/local/go/bin:/usr/local/lib/nodejs/nodejs-latest/bin:/home/code/go/bin"
