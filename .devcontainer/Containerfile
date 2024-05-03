@@ -1,7 +1,7 @@
-FROM ghcr.io/whynotea/devcontainer-golang:v1.0.1
+FROM ghcr.io/whynotea/devcontainer-golang:v1.0.3
 
 USER root
-ARG VERSION=v18.16.0
+ARG VERSION=v20.12.2
 ARG DISTRO=linux-x64
 RUN dnf install -y --setopt=install_weak_deps=false --setopt=tsflags=nodocs \
                 gtk3-devel webkit2gtk4.0-devel mesa-dri-drivers xz && \
