@@ -1,5 +1,22 @@
 # Changelog
 
+## [2.8.1](https://github.com/whynotea/devcontainer-wails/compare/v2.8.1...v2.8.1) (2024-05-03)
+
+
+### Features
+
+* Update to v2.8.1 of wails ([8de48bd](https://github.com/whynotea/devcontainer-wails/commit/8de48bd22f91bcbd2eef711d2330cbb2309e95d2))
+
+
+### Bug Fixes
+
+* add CHANGELOG ([675f999](https://github.com/whynotea/devcontainer-wails/commit/675f9993441e3a1f8fb6b0dcc292b43d6237eb00))
+
+
+### Miscellaneous Chores
+
+* release 2.8.1 ([1788e75](https://github.com/whynotea/devcontainer-wails/commit/1788e755bd11092c23ad16bec537737d1531c868))
+
 ## [2.8.1](https://github.com/whynotea/devcontainer-wails/compare/v2.8.0...v2.8.1) (2024-05-03)
 
 
