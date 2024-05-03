@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.2](https://github.com/whynotea/devcontainer-wails/compare/v2.8.1...v2.8.2) (2024-05-03)
+
+
+### Bug Fixes
+
+* update nodejs and golang devcontainer image ([b1803e4](https://github.com/whynotea/devcontainer-wails/commit/b1803e4b3befe6654564bc8c9d32f303b4e4b898))
+
 ## [2.8.1](https://github.com/whynotea/devcontainer-wails/compare/v2.8.1...v2.8.1) (2024-05-03)
 
 
