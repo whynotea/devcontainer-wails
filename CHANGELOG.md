@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.8.3](https://github.com/whynotea/devcontainer-wails/compare/v2.8.2...v2.8.3) (2024-05-10)
+
+
+### Bug Fixes
+
+* update to devcontainer-golang v1.0.6 ([ad75e5c](https://github.com/whynotea/devcontainer-wails/commit/ad75e5c63bb990e4c0d5be340ac3c00c5b6ef829))
+
 ## [2.8.2](https://github.com/whynotea/devcontainer-wails/compare/v2.8.1...v2.8.2) (2024-05-03)
 
 
