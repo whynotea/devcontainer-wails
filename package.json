@@ -1,6 +1,6 @@
 {
   "name": "devcontainer-wails",
-  "version": "2.8.2",
+  "version": "2.8.3",
   "description": "Nodejs wrapper to bundle various linters and build tools for devcontainer-wails",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
